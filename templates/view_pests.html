@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block title %}
+Pests and Diseases
+{% endblock title %}
+
+{% block body %}
+<div class="container mt-3">
+  <div class="row justify-content-center">
+    <div class="col-sm-8">
+      <div class="card">
+          <img src="{{ pest.PrimaryImageURL }}" class="card-img-top custom-img" alt="Primary Image">
+          <div class="card-body">
+            <h5 class="card-title font-weight-bold text-center">
+              Pests and Diseases Information
+            </h5>
+            <div class="mb-3">
+              <h6 class="font-weight-bold">Common Name:</h6>
+              <p class="card-text">{{ pest.CommonName }}</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="font-weight-bold">Scientific Name:</h6>
+              <p class="card-text">{{ pest.ScientificName }}</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="font-weight-bold">Presence in NZ:</h6>
+              <p class="card-text">{% if pest.PresenceInNZ %}Yes{% else %}No{% endif %}</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="font-weight-bold">Key Characteristics:</h6>
+              <p class="card-text">{{ pest.KeyCharacteristics }}</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="font-weight-bold">Biology Description:</h6>
+              <p class="card-text">{{ pest.BiologyDescription }}</p>
+            </div>
+            <div class="mb-3">
+              <h6 class="font-weight-bold">Impacts:</h6>
+              <p class="card-text">{{ pest.Impacts }}</p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock body %}

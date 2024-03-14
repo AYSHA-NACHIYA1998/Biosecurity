@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# IDE
+.idea/
+
+# Compiled files
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Temporary files
+*.swp
+*~
+
+# Debug log
+debug.log
+
+# Editor-specific files
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Others
+*.db
+*.log

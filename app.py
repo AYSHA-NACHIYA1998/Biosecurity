@@ -1,5 +1,4 @@
 from flask import Flask, render_template, request, session, redirect, url_for, flash
-
 import mysql.connector
 from flask_login import UserMixin, LoginManager, login_user, login_required, current_user, logout_user
 from flask_hashing import Hashing
@@ -16,8 +15,8 @@ hashing = Hashing(app)
 db_connection = mysql.connector.connect(
     host='localhost',
     user='root',
-    password='',
-    database='Hetro_pd'
+    password='root',
+    database='biosecurity'
 )
 cursor = db_connection.cursor(dictionary=True)  # Use dictionary cursor to fetch results as dictionaries
 

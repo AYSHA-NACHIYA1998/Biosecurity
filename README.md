@@ -8,7 +8,8 @@ This README file provides a brief overview of the horticulture pest and disease 
 The horticulture pest and disease biosecurity guide web application is designed to provide information on horticulture pests and diseases present in New Zealand, as well as those not currently found in the country. It includes features such as user authentication, role-based access control, profile management, and a comprehensive guide containing detailed information about pests and diseases.
 
 ### Login Information for Different Types of Users:
-- **Horticulturalists:**
+ 
+- **Administrator:**
   - Username: aysha@admin.com
   - Password: 12345678
 
@@ -16,7 +17,7 @@ The horticulture pest and disease biosecurity guide web application is designed 
   - Username: aysha@staff.com
   - Password: 12345678
 
-- **Administrator:**
+- **Horticulturalist:**
   - Username: aysha@hetro.com
   - Password: 12345678
 

@@ -44,3 +44,63 @@ The horticulture pest and disease biosecurity guide web application is designed 
 5. Run the Flask application using the command `python app.py`.
 6. Access the application through the provided PythonAnywhere URL: [Biosecurity Web App](http://aysha1157662.pythonanywhere.com/).
 
+ Description of Role-based Login Pages in the Horticulture Pest and Disease 
+Biosecurity Guide Web Application 
+
+# 1 Admin/Staff Login Page: 
+• This page is intended for users with roles of "Staff" and "Administrator". 
+• The page extends from a base template called 'auth.html', suggesting a 
+consistent design and layout across multiple pages. 
+• The page displays a heading "Admin / Staff Login" with a horticulture-themed 
+design. 
+• Flash messages, if any, are displayed to notify users of any relevant information 
+or errors. 
+• A form is presented where users can input their email address and password. 
+• Upon submitting the form, the data is sent to the "/login" route using the POST 
+method. 
+• If users are new and wish to register, they can click on the "Signup" link, which 
+directs them to the registration page. 
+• Users who identify as "Horticulturalists" can click on the "Login" link provided 
+at the bottom of the form to switch to the Horticulturalists' login page.
+
+# 2 Horticulturalists Login Page: 
+• This page is specifically designed for users with the role of "Horticulturalists". 
+• Similar to the Admin/Staff login page, it extends the 'auth.html' base template 
+for consistency. 
+• The page features a heading "Horticulturalists Login" with a horticulture
+themed design. 
+• Flash messages, if any, are displayed similar to the Admin/Staff login page. 
+• A form allows users to input their email address and password. 
+• Upon form submission, the data is sent to the "/login_hetro" route using the 
+POST method. 
+• Users who want to register can click on the "Signup" link, redirecting them to 
+the registration page. 
+• Users who identify as "Admin/Staff" can switch to the Admin/Staff login page 
+by clicking on the "Login" link provided at the bottom of the form.
+
+# User Roles and Permissions 
+# 1. Horticulturalists: 
+• Can view the biosecurity guide. 
+• Can manage their own profile (update personal information and change 
+password). 
+• Have access to view detailed information about horticulture pests and diseases, 
+including primary images, common names, scientific names, key 
+characteristics, biology/description, impacts, and additional images. 
+# 2. Staff: 
+• In addition to horticulturalists' privileges, staff members have additional 
+permissions: 
+• Can manage their own profile (update personal information and change 
+password). 
+• Can view horticulturalists' profiles. 
+• Can manage the biosecurity guide, including adding, updating, and 
+deleting details and images, such as selecting the primary image. 
+# 3. Administrators: 
+• Have full access to the system and all features. 
+• In addition to staff and horticulturalists' privileges, administrators have the 
+following permissions: 
+• Can manage their own profile (update personal information and change 
+password). 
+• Can manage horticulturalists (view, add, update, and delete). 
+• Can manage staff (view, add, update, and delete). 
+• Can manage the biosecurity guide, including adding, updating, and 
+deleting details and images.. User Roles and Permissions 

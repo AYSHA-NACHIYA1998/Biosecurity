@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request, session, redirect, url_for, flash
-import mysql.connector
+from connect import *
 from flask_login import UserMixin, LoginManager, login_user, login_required, current_user, logout_user
 from flask_hashing import Hashing
 
@@ -10,15 +10,6 @@ app.secret_key = 'hetroadmin'
 
 hashing = Hashing(app)
 
-
-# MySQL connection configuration
-db_connection = mysql.connector.connect(
-    host='localhost',
-    user='root',
-    password='root',
-    database='biosecurity'
-)
-cursor = db_connection.cursor(dictionary=True)  # Use dictionary cursor to fetch results as dictionaries
 
 class User(UserMixin):
     def __init__(self, id, firstname, lastname, email, password, uid, phone, hiredate):

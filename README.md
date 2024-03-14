@@ -29,6 +29,10 @@ The horticulture pest and disease biosecurity guide web application is designed 
 5. **biosecurity.sql:** MySQL script for creating and populating the database.
 6. **README.md:** Markdown file providing instructions and information about the project.
 7. **.gitignore:** File specifying which files and directories to ignore in version control.
+
+ ## Note  
+  We need to reload the server on PythonAnywhere if the error message 'Internal Server Error' appears to correct it.
+
   
 ### Project Structure:
 - The application logic is implemented in `app.py`, following the Flask framework.
